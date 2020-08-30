@@ -1,0 +1,19 @@
+
+1 复制 f2c 源文件到  src/f2c
+copy $(x_src)/F2CLIBS\libf2c\*.* src/f2c
+添加所有文件（.c .h）到 Source Files
+移除 arithchk.c ftell64_.c pow_qq.c qbitbits.c qbitshft.c
+
+2 copy src/f2c.h include/_f2c.h
+3 修改 f2c.h 
+	#ifndef F2C_INCLUDE
+	#define F2C_INCLUDE
+
+	#include "_f2c.h"
+
+	#endif
+
+4 修改 main.c,屏蔽 MAIN__()函数定义
+
+5 
+error C4703: 使用了可能未初始化的本地指针变量“x0”=> 取消 安全开发生命周期（SDL）检查
