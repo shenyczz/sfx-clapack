@@ -1,7 +1,7 @@
 
-1.for /r��Ҫ��������ָ��·������������Ŀ¼�з���Ҫ����ļ���/r�����û��ָ��Ŀ¼����ʹ�õ�ǰĿ¼��
+1.for /r主要用于搜索指定路径及其所有子目录中符合要求的文件（/r后如果没有指定目录，则使用当前目录）
 
-��d:\temp�µ�*.txt�ļ��޸ĺ�׺��Ϊ.doc�ļ�
+将d:\temp下的*.txt文件修改后缀名为.doc文件
 
 @echo off 
 for /r d:\temp %a in (*.txt) do ren "%a" "%~na.doc"
@@ -13,20 +13,20 @@ for /r d:\temp %a in (*.txt) do ren "%a" "%~na.doc"
 for /r d:\temp %a in (*.doc) do ren "%a" "%~na.txt"
 
 
-2.for /d��������Ŀ¼���ļ��У��������ļ���������ֻ����ָ��Ŀ¼����������Ŀ¼
-����E:\gp�µ������ļ���
+2.for /d用于搜索目录或文件夹（不搜索文件），而且只搜索指定目录，不搜索子目录
+搜索E:\gp下的所有文件夹
 
 @echo off
 for /d %%a in (E:\gp\*) do echo %%a
 pause
 
 
-3. �����ļ�
+3. 拷贝文件
 for /r d:\temp\a %a in (*.txt) do copy /y "%a" d:\temp\b\
 
-4. ����������
+4. 重命名拷贝
 for /r d:\temp\a %a in (*.txt) do copy /y "%a" d:\temp\b\"%~na.doc"
 
-5. �ƶ��ļ�
+5. 移动文件
 for /r d:\temp\a %a in (*.doc) do move /y "%a" d:\temp\b\
 

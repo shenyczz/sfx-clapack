@@ -16,15 +16,15 @@
 ///	zxla	- ZXLASRC
 
 
-5. рф╤╞нд╪Ч
+5. Г╖╩Е┼╗Ф√┤Д╩╤
 for /r d:\temp\a %a in (*.doc) do move /y "%a" d:\temp\b\
 for /r %a in %SXLASRC% do echo %a
 
-// й╧сц╣╠г╟д©б╪
+// Д╫©Г■╗Е╫⌠Е┴█Г⌡╝Е╫∙
 set SXLASRC=(1.txt 2.c)
 for %a in %SXLASRC% do move %a sxla
 
-║╬©╙й╪║©
+Ц─░Е╪─Е╖▀Ц─▒
 
 //	ala		- ALLAUX
 //
