@@ -1,0 +1,2 @@
+#define CLAPACK_API __declspec(dllexport)
+#define CLAPACK_API __declspec(dllimport)

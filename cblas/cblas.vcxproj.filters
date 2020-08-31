@@ -63,16 +63,10 @@
     <ClInclude Include="src\f2c\sysdep1.h">
       <Filter>Source Files\f2c</Filter>
     </ClInclude>
-    <ClInclude Include="include\_f2c.h">
-      <Filter>Include Files</Filter>
-    </ClInclude>
     <ClInclude Include="include\f2c.h">
       <Filter>Include Files</Filter>
     </ClInclude>
     <ClInclude Include="include\_cblas.h">
-      <Filter>Include Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\cblas.h">
       <Filter>Include Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -1006,10 +1000,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="docs\cblas_f2c.txt">
+    <Text Include="docs\cblas.txt">
       <Filter>docs</Filter>
     </Text>
-    <Text Include="docs\cblas.txt">
+    <Text Include="docs\cmakelists_cblas.txt">
       <Filter>docs</Filter>
     </Text>
   </ItemGroup>

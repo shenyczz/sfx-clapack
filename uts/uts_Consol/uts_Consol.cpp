@@ -4,6 +4,7 @@
 #include <iostream>
 
 #pragma comment(lib,"cblas.lib")
+#pragma comment(lib,"clapack.lib")
 
 
 int main()

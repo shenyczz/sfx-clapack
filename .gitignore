@@ -53,4 +53,7 @@ dkms.conf
 
 // Folder
 .vs
+[Bb]in
+[Bb]uild
 [Dd]ebug
+

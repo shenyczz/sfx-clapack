@@ -3,7 +3,10 @@
 #ifndef __CLAPACK_H
 #define __CLAPACK_H
 
-#include "_f2c.h"
+#include "old_f2c.h"
+
+#pragma region MyRegion
+
 
 /* Subroutine */ int caxpy_(integer *n, complex *ca, complex *cx, integer *
 	incx, complex *cy, integer *incy);
@@ -122,8 +125,10 @@
 /* Subroutine */ int ctrsv_(char *uplo, char *trans, char *diag, integer *n, 
 	complex *a, integer *lda, complex *x, integer *incx);
 
+#pragma endregion
 
-// DOUBLE
+#pragma region DOUBLE
+
 
 
 doublereal dasum_(integer *n, doublereal *dx, integer *incx);
@@ -247,6 +252,18 @@ doublereal dsdot_(integer *n, real *sx, integer *incx, real *sy, integer *
 doublereal dzasum_(integer *n, doublecomplex *zx, integer *incx);
 
 doublereal dznrm2_(integer *n, doublecomplex *x, integer *incx);
+
+
+
+#pragma endregion
+
+
+
+
+
+
+
+
 
 integer icamax_(integer *n, complex *cx, integer *incx);
 

@@ -1,0 +1,32 @@
+
+1.for /r主要用于搜索指定路径及其所有子目录中符合要求的文件（/r后如果没有指定目录，则使用当前目录）
+
+将d:\temp下的*.txt文件修改后缀名为.doc文件
+
+@echo off 
+for /r d:\temp %a in (*.txt) do ren "%a" "%~na.doc"
+pause
+
+// ok
+for /r d:\temp\a %a in (*.txt) do echo "%a"
+for /r d:\temp %a in (*.txt) do ren "%a" "%~na.doc"
+for /r d:\temp %a in (*.doc) do ren "%a" "%~na.txt"
+
+
+2.for /d用于搜索目录或文件夹（不搜索文件），而且只搜索指定目录，不搜索子目录
+搜索E:\gp下的所有文件夹
+
+@echo off
+for /d %%a in (E:\gp\*) do echo %%a
+pause
+
+
+3. 拷贝文件
+for /r d:\temp\a %a in (*.txt) do copy /y "%a" d:\temp\b\
+
+4. 重命名拷贝
+for /r d:\temp\a %a in (*.txt) do copy /y "%a" d:\temp\b\"%~na.doc"
+
+5. 移动文件
+for /r d:\temp\a %a in (*.doc) do move /y "%a" d:\temp\b\
+
