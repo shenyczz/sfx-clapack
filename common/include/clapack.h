@@ -3,13 +3,6 @@
 #include "_f2c.h"
 #include "cblas.h"
 
-#ifdef AUTO_LINKING_CBLAS
-#pragma comment(lib,"cblas.lib")
-#pragma message("Auto linking to cblas.dll")
-#else
-#pragma message("自定义链接 cblas.dll")
-#endif // AUTO_LINK_CBLAS
-
 
 CLAPACK_API int fn_clapack(void);
 

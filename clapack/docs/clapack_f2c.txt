@@ -1,0 +1,108 @@
+
+【clapack 需要的 f2c】
+
+[c]
+c_abs
+c_div
+c_exp
+c_sqrt
+cabs
+
+[d]
+d_lg10
+
+dlamc3_	?
+dlamch_	?
+
+[e]
+
+
+[f]
+f77_aloc
+
+[i]
+i_dnnt
+i_len
+i_nint
+
+[p]
+pow_ci
+pow_dd
+pow_di
+pow_ii
+pow_ri
+poe_zi
+
+[r]
+r_cnjg
+r_imag
+r_lg10
+r_sign
+
+[s]
+s_cat
+s_cmp
+s_copy
+slamc3_ ?
+slamch_ ?
+
+
+[z]
+z_abs
+zbdsqr ?
+z_div
+
+
+
+/*
+
+blas_cgbmv_x__，函数 _cla_gbrfsx_extended__ 中引用了该符号
+blas_cgbmv2_x__，函数 _cla_gbrfsx_extended__ 中引用了该符号
+blas_cgemv_x__，函数 _cla_gerfsx_extended__ 中引用了该符号
+blas_cgemv2_x__，函数 _cla_gerfsx_extended__ 中引用了该符号
+blas_chemv_x__，函数 _cla_herfsx_extended__ 中引用了该符号
+blas_chemv_x__
+blas_chemv2_x__，函数 _cla_herfsx_extended__ 中引用了该符号
+blas_chemv2_x__
+blas_csymv_x__，函数 _cla_syrfsx_extended__ 中引用了该符号
+blas_csymv2_x__，函数 _cla_syrfsx_extended__ 中引用了该符号
+blas_dgbmv_x__，函数 _dla_gbrfsx_extended__ 中引用了该符号
+blas_dgbmv2_x__，函数 _dla_gbrfsx_extended__ 中引用了该符号
+blas_dgemv_x__，函数 _dla_gerfsx_extended__ 中引用了该符号
+blas_dgemv2_x__，函数 _dla_gerfsx_extended__ 中引用了该符号
+blas_dsymv_x__，函数 _dla_porfsx_extended__ 中引用了该符号
+blas_dsymv_x__
+blas_dsymv2_x__，函数 _dla_porfsx_extended__ 中引用了该符号
+blas_dsymv2_x__
+blas_sgbmv_x__，函数 _sla_gbrfsx_extended__ 中引用了该符号
+blas_sgbmv2_x__，函数 _sla_gbrfsx_extended__ 中引用了该符号
+blas_sgemv_x__，函数 _sla_gerfsx_extended__ 中引用了该符号
+blas_sgemv2_x__，函数 _sla_gerfsx_extended__ 中引用了该符号
+blas_ssymv_x__，函数 _sla_porfsx_extended__ 中引用了该符号
+blas_ssymv_x__
+blas_ssymv2_x__，函数 _sla_porfsx_extended__ 中引用了该符号
+blas_ssymv2_x__
+z_abs，函数 _ztgex2_ 中引用了该符号
+d_imag，函数 _zla_syrcond_x__ 中引用了该符号
+z_div，函数 _zla_syrcond_x__ 中引用了该符号
+d_cnjg
+zbdsqr_，函数 _zgelss_ 中引用了该符号
+pow_zi，函数 _zhgeqz_ 中引用了该符号
+z_sqrt，函数 _zlaqr0_ 中引用了该符号
+z_exp，函数 _zlarnv_ 中引用了该符号
+blas_zgbmv_x__，函数 _zla_gbrfsx_extended__ 中引用了该符号
+blas_zgbmv2_x__，函数 _zla_gbrfsx_extended__ 中引用了该符号
+blas_zgemv_x__，函数 _zla_gerfsx_extended__ 中引用了该符号
+blas_zgemv2_x__，函数 _zla_gerfsx_extended__ 中引用了该符号
+blas_zhemv_x__，函数 _zla_herfsx_extended__ 中引用了该符号
+blas_zhemv_x__
+blas_zhemv2_x__，函数 _zla_herfsx_extended__ 中引用了该符号
+blas_zhemv2_x__
+blas_zsymv_x__，函数 _zla_syrfsx_extended__ 中引用了该符号
+blas_zsymv2_x__，函数 _zla_syrfsx_extended__ 中引用了该符号
+
+*/
+
+
+
+

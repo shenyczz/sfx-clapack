@@ -12,7 +12,7 @@ namespace utscblas
 	{
 	public:
 		
-		TEST_METHOD(TestMethod1)
+		TEST_METHOD(TCBLAS)
 		{
 			blas_dasum();
 			blas_ddot();
@@ -44,16 +44,14 @@ namespace utscblas
 			integer incy = 1;
 
 			auto dot = ddot_(&n, dx, &incx, dy, &incy);
-			//auto sum = dasum_(&n, dx, &incx);
 
 			Assert::AreEqual(dot, 36.3);
 		}
 
 
+
 		//}}@@@
 	};
-
-
 
 
 }

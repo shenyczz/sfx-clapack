@@ -23,7 +23,7 @@ static integer c_n1 = -1;
 static doublereal c_b421 = 0.;
 static doublereal c_b443 = 1.;
 
-/* Subroutine */ int dgesvd_(char *jobu, char *jobvt, integer *m, integer *n, 
+/* Subroutine */int dgesvd_(char *jobu, char *jobvt, integer *m, integer *n,
 	doublereal *a, integer *lda, doublereal *s, doublereal *u, integer *
 	ldu, doublereal *vt, integer *ldvt, doublereal *work, integer *lwork, 
 	integer *info)
@@ -104,7 +104,7 @@ static doublereal c_b443 = 1.;
 /*       A = U * SIGMA * transpose(V) */
 
 /*  where SIGMA is an M-by-N matrix which is zero except for its */
-/*  min(m,n) diagonal elements, U is an M-by-M orthogonal matrix, and */
+/*  min(m,n) diagonal elements, U is an M-by-M orthogonal(Õý½») matrix, and */
 /*  V is an N-by-N orthogonal matrix.  The diagonal elements of SIGMA */
 /*  are the singular values of A; they are real and non-negative, and */
 /*  are returned in descending order.  The first min(m,n) columns of */

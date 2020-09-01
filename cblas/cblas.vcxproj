@@ -101,7 +101,7 @@
       </SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;CBLAS_EXPORTS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;NO_ISATTY;MSDOS;USE_CLOCK;NO_BLAS_WRAP;_COMPLEX_DEFINED</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)include;include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;$(SolutionDir)common\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -118,7 +118,7 @@
       </SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;CBLAS_EXPORTS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;NO_ISATTY;MSDOS;USE_CLOCK;NO_BLAS_WRAP;_COMPLEX_DEFINED</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)include;include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;$(SolutionDir)common\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -135,7 +135,7 @@
       </SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;CBLAS_EXPORTS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;NO_ISATTY;MSDOS;USE_CLOCK;NO_BLAS_WRAP;_COMPLEX_DEFINED</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)include;include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;$(SolutionDir)common\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -152,7 +152,7 @@
       </SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;CBLAS_EXPORTS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;NO_ISATTY;MSDOS;USE_CLOCK;NO_BLAS_WRAP;_COMPLEX_DEFINED</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)include;include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;$(SolutionDir)common\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -166,20 +166,171 @@
     <None Include="cpp.hint" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\common\f2clib\lio.h" />
+    <ClInclude Include="..\common\f2clib\rawio.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="include\arith.h" />
     <ClInclude Include="include\_cblas.h" />
     <ClInclude Include="include\f2c.h" />
-    <ClInclude Include="src\f2c\ctype.h" />
-    <ClInclude Include="src\f2c\f2c.h" />
-    <ClInclude Include="src\f2c\fio.h" />
-    <ClInclude Include="src\f2c\fmt.h" />
-    <ClInclude Include="src\f2c\fp.h" />
-    <ClInclude Include="src\f2c\lio.h" />
-    <ClInclude Include="src\f2c\rawio.h" />
-    <ClInclude Include="src\f2c\signal1.h" />
-    <ClInclude Include="src\f2c\sysdep1.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\common\f2clib\abort_.c" />
+    <ClCompile Include="..\common\f2clib\backspac.c" />
+    <ClCompile Include="..\common\f2clib\cabs.c" />
+    <ClCompile Include="..\common\f2clib\close.c" />
+    <ClCompile Include="..\common\f2clib\ctype.c" />
+    <ClCompile Include="..\common\f2clib\c_abs.c" />
+    <ClCompile Include="..\common\f2clib\c_cos.c" />
+    <ClCompile Include="..\common\f2clib\c_div.c" />
+    <ClCompile Include="..\common\f2clib\c_exp.c" />
+    <ClCompile Include="..\common\f2clib\c_log.c" />
+    <ClCompile Include="..\common\f2clib\c_sin.c" />
+    <ClCompile Include="..\common\f2clib\c_sqrt.c" />
+    <ClCompile Include="..\common\f2clib\derfc_.c" />
+    <ClCompile Include="..\common\f2clib\derf_.c" />
+    <ClCompile Include="..\common\f2clib\dfe.c" />
+    <ClCompile Include="..\common\f2clib\dolio.c" />
+    <ClCompile Include="..\common\f2clib\dtime_.c" />
+    <ClCompile Include="..\common\f2clib\due.c" />
+    <ClCompile Include="..\common\f2clib\d_abs.c" />
+    <ClCompile Include="..\common\f2clib\d_acos.c" />
+    <ClCompile Include="..\common\f2clib\d_asin.c" />
+    <ClCompile Include="..\common\f2clib\d_atan.c" />
+    <ClCompile Include="..\common\f2clib\d_atn2.c" />
+    <ClCompile Include="..\common\f2clib\d_cnjg.c" />
+    <ClCompile Include="..\common\f2clib\d_cos.c" />
+    <ClCompile Include="..\common\f2clib\d_cosh.c" />
+    <ClCompile Include="..\common\f2clib\d_dim.c" />
+    <ClCompile Include="..\common\f2clib\d_exp.c" />
+    <ClCompile Include="..\common\f2clib\d_imag.c" />
+    <ClCompile Include="..\common\f2clib\d_int.c" />
+    <ClCompile Include="..\common\f2clib\d_lg10.c" />
+    <ClCompile Include="..\common\f2clib\d_log.c" />
+    <ClCompile Include="..\common\f2clib\d_mod.c" />
+    <ClCompile Include="..\common\f2clib\d_nint.c" />
+    <ClCompile Include="..\common\f2clib\d_prod.c" />
+    <ClCompile Include="..\common\f2clib\d_sign.c" />
+    <ClCompile Include="..\common\f2clib\d_sin.c" />
+    <ClCompile Include="..\common\f2clib\d_sinh.c" />
+    <ClCompile Include="..\common\f2clib\d_sqrt.c" />
+    <ClCompile Include="..\common\f2clib\d_tan.c" />
+    <ClCompile Include="..\common\f2clib\d_tanh.c" />
+    <ClCompile Include="..\common\f2clib\ef1asc_.c" />
+    <ClCompile Include="..\common\f2clib\ef1cmc_.c" />
+    <ClCompile Include="..\common\f2clib\endfile.c" />
+    <ClCompile Include="..\common\f2clib\erfc_.c" />
+    <ClCompile Include="..\common\f2clib\erf_.c" />
+    <ClCompile Include="..\common\f2clib\err.c" />
+    <ClCompile Include="..\common\f2clib\etime_.c" />
+    <ClCompile Include="..\common\f2clib\exit_.c" />
+    <ClCompile Include="..\common\f2clib\f77vers.c" />
+    <ClCompile Include="..\common\f2clib\f77_aloc.c" />
+    <ClCompile Include="..\common\f2clib\fmt.c" />
+    <ClCompile Include="..\common\f2clib\fmtlib.c" />
+    <ClCompile Include="..\common\f2clib\ftell_.c" />
+    <ClCompile Include="..\common\f2clib\getarg_.c" />
+    <ClCompile Include="..\common\f2clib\getenv_.c" />
+    <ClCompile Include="..\common\f2clib\hl_ge.c" />
+    <ClCompile Include="..\common\f2clib\hl_gt.c" />
+    <ClCompile Include="..\common\f2clib\hl_le.c" />
+    <ClCompile Include="..\common\f2clib\hl_lt.c" />
+    <ClCompile Include="..\common\f2clib\h_abs.c" />
+    <ClCompile Include="..\common\f2clib\h_dim.c" />
+    <ClCompile Include="..\common\f2clib\h_dnnt.c" />
+    <ClCompile Include="..\common\f2clib\h_indx.c" />
+    <ClCompile Include="..\common\f2clib\h_len.c" />
+    <ClCompile Include="..\common\f2clib\h_mod.c" />
+    <ClCompile Include="..\common\f2clib\h_nint.c" />
+    <ClCompile Include="..\common\f2clib\h_sign.c" />
+    <ClCompile Include="..\common\f2clib\i77vers.c" />
+    <ClCompile Include="..\common\f2clib\iargc_.c" />
+    <ClCompile Include="..\common\f2clib\iio.c" />
+    <ClCompile Include="..\common\f2clib\ilnw.c" />
+    <ClCompile Include="..\common\f2clib\inquire.c" />
+    <ClCompile Include="..\common\f2clib\i_abs.c" />
+    <ClCompile Include="..\common\f2clib\i_ceiling.c" />
+    <ClCompile Include="..\common\f2clib\i_dim.c" />
+    <ClCompile Include="..\common\f2clib\i_dnnt.c" />
+    <ClCompile Include="..\common\f2clib\i_indx.c" />
+    <ClCompile Include="..\common\f2clib\i_len.c" />
+    <ClCompile Include="..\common\f2clib\i_len_trim.c" />
+    <ClCompile Include="..\common\f2clib\i_mod.c" />
+    <ClCompile Include="..\common\f2clib\i_nint.c" />
+    <ClCompile Include="..\common\f2clib\i_sign.c" />
+    <ClCompile Include="..\common\f2clib\lbitbits.c" />
+    <ClCompile Include="..\common\f2clib\lbitshft.c" />
+    <ClCompile Include="..\common\f2clib\lread.c" />
+    <ClCompile Include="..\common\f2clib\lwrite.c" />
+    <ClCompile Include="..\common\f2clib\l_ge.c" />
+    <ClCompile Include="..\common\f2clib\l_gt.c" />
+    <ClCompile Include="..\common\f2clib\l_le.c" />
+    <ClCompile Include="..\common\f2clib\l_lt.c" />
+    <ClCompile Include="..\common\f2clib\main.c" />
+    <ClCompile Include="..\common\f2clib\open.c" />
+    <ClCompile Include="..\common\f2clib\pow_ci.c" />
+    <ClCompile Include="..\common\f2clib\pow_dd.c" />
+    <ClCompile Include="..\common\f2clib\pow_di.c" />
+    <ClCompile Include="..\common\f2clib\pow_hh.c" />
+    <ClCompile Include="..\common\f2clib\pow_ii.c" />
+    <ClCompile Include="..\common\f2clib\pow_ri.c" />
+    <ClCompile Include="..\common\f2clib\pow_zi.c" />
+    <ClCompile Include="..\common\f2clib\pow_zz.c" />
+    <ClCompile Include="..\common\f2clib\rdfmt.c" />
+    <ClCompile Include="..\common\f2clib\rewind.c" />
+    <ClCompile Include="..\common\f2clib\rsfe.c" />
+    <ClCompile Include="..\common\f2clib\rsli.c" />
+    <ClCompile Include="..\common\f2clib\rsne.c" />
+    <ClCompile Include="..\common\f2clib\r_abs.c" />
+    <ClCompile Include="..\common\f2clib\r_acos.c" />
+    <ClCompile Include="..\common\f2clib\r_asin.c" />
+    <ClCompile Include="..\common\f2clib\r_atan.c" />
+    <ClCompile Include="..\common\f2clib\r_atn2.c" />
+    <ClCompile Include="..\common\f2clib\r_cnjg.c" />
+    <ClCompile Include="..\common\f2clib\r_cos.c" />
+    <ClCompile Include="..\common\f2clib\r_cosh.c" />
+    <ClCompile Include="..\common\f2clib\r_dim.c" />
+    <ClCompile Include="..\common\f2clib\r_exp.c" />
+    <ClCompile Include="..\common\f2clib\r_imag.c" />
+    <ClCompile Include="..\common\f2clib\r_int.c" />
+    <ClCompile Include="..\common\f2clib\r_lg10.c" />
+    <ClCompile Include="..\common\f2clib\r_log.c" />
+    <ClCompile Include="..\common\f2clib\r_mod.c" />
+    <ClCompile Include="..\common\f2clib\r_nint.c" />
+    <ClCompile Include="..\common\f2clib\r_sign.c" />
+    <ClCompile Include="..\common\f2clib\r_sin.c" />
+    <ClCompile Include="..\common\f2clib\r_sinh.c" />
+    <ClCompile Include="..\common\f2clib\r_sqrt.c" />
+    <ClCompile Include="..\common\f2clib\r_tan.c" />
+    <ClCompile Include="..\common\f2clib\r_tanh.c" />
+    <ClCompile Include="..\common\f2clib\sfe.c" />
+    <ClCompile Include="..\common\f2clib\signal_.c" />
+    <ClCompile Include="..\common\f2clib\signbit.c" />
+    <ClCompile Include="..\common\f2clib\sig_die.c" />
+    <ClCompile Include="..\common\f2clib\sue.c" />
+    <ClCompile Include="..\common\f2clib\system_.c" />
+    <ClCompile Include="..\common\f2clib\s_cat.c" />
+    <ClCompile Include="..\common\f2clib\s_cmp.c" />
+    <ClCompile Include="..\common\f2clib\s_copy.c" />
+    <ClCompile Include="..\common\f2clib\s_paus.c" />
+    <ClCompile Include="..\common\f2clib\s_rnge.c" />
+    <ClCompile Include="..\common\f2clib\s_stop.c" />
+    <ClCompile Include="..\common\f2clib\typesize.c" />
+    <ClCompile Include="..\common\f2clib\uio.c" />
+    <ClCompile Include="..\common\f2clib\uninit.c" />
+    <ClCompile Include="..\common\f2clib\util.c" />
+    <ClCompile Include="..\common\f2clib\wref.c" />
+    <ClCompile Include="..\common\f2clib\wrtfmt.c" />
+    <ClCompile Include="..\common\f2clib\wsfe.c" />
+    <ClCompile Include="..\common\f2clib\wsle.c" />
+    <ClCompile Include="..\common\f2clib\wsne.c" />
+    <ClCompile Include="..\common\f2clib\xwsne.c" />
+    <ClCompile Include="..\common\f2clib\z_abs.c" />
+    <ClCompile Include="..\common\f2clib\z_cos.c" />
+    <ClCompile Include="..\common\f2clib\z_div.c" />
+    <ClCompile Include="..\common\f2clib\z_exp.c" />
+    <ClCompile Include="..\common\f2clib\z_log.c" />
+    <ClCompile Include="..\common\f2clib\z_sin.c" />
+    <ClCompile Include="..\common\f2clib\z_sqrt.c" />
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="src\blas\caxpy.c" />
     <ClCompile Include="src\blas\ccopy.c" />
@@ -330,169 +481,13 @@
     <ClCompile Include="src\blas\ztrmv.c" />
     <ClCompile Include="src\blas\ztrsm.c" />
     <ClCompile Include="src\blas\ztrsv.c" />
-    <ClCompile Include="src\blas\_blas_xerbla.c" />
-    <ClCompile Include="src\blas\_blas_xerbla_array.c" />
-    <ClCompile Include="src\f2c\abort_.c" />
-    <ClCompile Include="src\f2c\backspac.c" />
-    <ClCompile Include="src\f2c\cabs.c" />
-    <ClCompile Include="src\f2c\close.c" />
-    <ClCompile Include="src\f2c\ctype.c" />
-    <ClCompile Include="src\f2c\c_abs.c" />
-    <ClCompile Include="src\f2c\c_cos.c" />
-    <ClCompile Include="src\f2c\c_div.c" />
-    <ClCompile Include="src\f2c\c_exp.c" />
-    <ClCompile Include="src\f2c\c_log.c" />
-    <ClCompile Include="src\f2c\c_sin.c" />
-    <ClCompile Include="src\f2c\c_sqrt.c" />
-    <ClCompile Include="src\f2c\derfc_.c" />
-    <ClCompile Include="src\f2c\derf_.c" />
-    <ClCompile Include="src\f2c\dfe.c" />
-    <ClCompile Include="src\f2c\dolio.c" />
-    <ClCompile Include="src\f2c\dtime_.c" />
-    <ClCompile Include="src\f2c\due.c" />
-    <ClCompile Include="src\f2c\d_abs.c" />
-    <ClCompile Include="src\f2c\d_acos.c" />
-    <ClCompile Include="src\f2c\d_asin.c" />
-    <ClCompile Include="src\f2c\d_atan.c" />
-    <ClCompile Include="src\f2c\d_atn2.c" />
-    <ClCompile Include="src\f2c\d_cnjg.c" />
-    <ClCompile Include="src\f2c\d_cos.c" />
-    <ClCompile Include="src\f2c\d_cosh.c" />
-    <ClCompile Include="src\f2c\d_dim.c" />
-    <ClCompile Include="src\f2c\d_exp.c" />
-    <ClCompile Include="src\f2c\d_imag.c" />
-    <ClCompile Include="src\f2c\d_int.c" />
-    <ClCompile Include="src\f2c\d_lg10.c" />
-    <ClCompile Include="src\f2c\d_log.c" />
-    <ClCompile Include="src\f2c\d_mod.c" />
-    <ClCompile Include="src\f2c\d_nint.c" />
-    <ClCompile Include="src\f2c\d_prod.c" />
-    <ClCompile Include="src\f2c\d_sign.c" />
-    <ClCompile Include="src\f2c\d_sin.c" />
-    <ClCompile Include="src\f2c\d_sinh.c" />
-    <ClCompile Include="src\f2c\d_sqrt.c" />
-    <ClCompile Include="src\f2c\d_tan.c" />
-    <ClCompile Include="src\f2c\d_tanh.c" />
-    <ClCompile Include="src\f2c\ef1asc_.c" />
-    <ClCompile Include="src\f2c\ef1cmc_.c" />
-    <ClCompile Include="src\f2c\endfile.c" />
-    <ClCompile Include="src\f2c\erfc_.c" />
-    <ClCompile Include="src\f2c\erf_.c" />
-    <ClCompile Include="src\f2c\err.c" />
-    <ClCompile Include="src\f2c\etime_.c" />
-    <ClCompile Include="src\f2c\exit_.c" />
-    <ClCompile Include="src\f2c\f77vers.c" />
-    <ClCompile Include="src\f2c\f77_aloc.c" />
-    <ClCompile Include="src\f2c\fmt.c" />
-    <ClCompile Include="src\f2c\fmtlib.c" />
-    <ClCompile Include="src\f2c\ftell_.c" />
-    <ClCompile Include="src\f2c\getarg_.c" />
-    <ClCompile Include="src\f2c\getenv_.c" />
-    <ClCompile Include="src\f2c\hl_ge.c" />
-    <ClCompile Include="src\f2c\hl_gt.c" />
-    <ClCompile Include="src\f2c\hl_le.c" />
-    <ClCompile Include="src\f2c\hl_lt.c" />
-    <ClCompile Include="src\f2c\h_abs.c" />
-    <ClCompile Include="src\f2c\h_dim.c" />
-    <ClCompile Include="src\f2c\h_dnnt.c" />
-    <ClCompile Include="src\f2c\h_indx.c" />
-    <ClCompile Include="src\f2c\h_len.c" />
-    <ClCompile Include="src\f2c\h_mod.c" />
-    <ClCompile Include="src\f2c\h_nint.c" />
-    <ClCompile Include="src\f2c\h_sign.c" />
-    <ClCompile Include="src\f2c\i77vers.c" />
-    <ClCompile Include="src\f2c\iargc_.c" />
-    <ClCompile Include="src\f2c\iio.c" />
-    <ClCompile Include="src\f2c\ilnw.c" />
-    <ClCompile Include="src\f2c\inquire.c" />
-    <ClCompile Include="src\f2c\i_abs.c" />
-    <ClCompile Include="src\f2c\i_ceiling.c" />
-    <ClCompile Include="src\f2c\i_dim.c" />
-    <ClCompile Include="src\f2c\i_dnnt.c" />
-    <ClCompile Include="src\f2c\i_indx.c" />
-    <ClCompile Include="src\f2c\i_len.c" />
-    <ClCompile Include="src\f2c\i_len_trim.c" />
-    <ClCompile Include="src\f2c\i_mod.c" />
-    <ClCompile Include="src\f2c\i_nint.c" />
-    <ClCompile Include="src\f2c\i_sign.c" />
-    <ClCompile Include="src\f2c\lbitbits.c" />
-    <ClCompile Include="src\f2c\lbitshft.c" />
-    <ClCompile Include="src\f2c\lread.c" />
-    <ClCompile Include="src\f2c\lwrite.c" />
-    <ClCompile Include="src\f2c\l_ge.c" />
-    <ClCompile Include="src\f2c\l_gt.c" />
-    <ClCompile Include="src\f2c\l_le.c" />
-    <ClCompile Include="src\f2c\l_lt.c" />
-    <ClCompile Include="src\f2c\main.c" />
-    <ClCompile Include="src\f2c\open.c" />
-    <ClCompile Include="src\f2c\pow_ci.c" />
-    <ClCompile Include="src\f2c\pow_dd.c" />
-    <ClCompile Include="src\f2c\pow_di.c" />
-    <ClCompile Include="src\f2c\pow_hh.c" />
-    <ClCompile Include="src\f2c\pow_ii.c" />
-    <ClCompile Include="src\f2c\pow_ri.c" />
-    <ClCompile Include="src\f2c\pow_zi.c" />
-    <ClCompile Include="src\f2c\pow_zz.c" />
-    <ClCompile Include="src\f2c\rdfmt.c" />
-    <ClCompile Include="src\f2c\rewind.c" />
-    <ClCompile Include="src\f2c\rsfe.c" />
-    <ClCompile Include="src\f2c\rsli.c" />
-    <ClCompile Include="src\f2c\rsne.c" />
-    <ClCompile Include="src\f2c\r_abs.c" />
-    <ClCompile Include="src\f2c\r_acos.c" />
-    <ClCompile Include="src\f2c\r_asin.c" />
-    <ClCompile Include="src\f2c\r_atan.c" />
-    <ClCompile Include="src\f2c\r_atn2.c" />
-    <ClCompile Include="src\f2c\r_cnjg.c" />
-    <ClCompile Include="src\f2c\r_cos.c" />
-    <ClCompile Include="src\f2c\r_cosh.c" />
-    <ClCompile Include="src\f2c\r_dim.c" />
-    <ClCompile Include="src\f2c\r_exp.c" />
-    <ClCompile Include="src\f2c\r_imag.c" />
-    <ClCompile Include="src\f2c\r_int.c" />
-    <ClCompile Include="src\f2c\r_lg10.c" />
-    <ClCompile Include="src\f2c\r_log.c" />
-    <ClCompile Include="src\f2c\r_mod.c" />
-    <ClCompile Include="src\f2c\r_nint.c" />
-    <ClCompile Include="src\f2c\r_sign.c" />
-    <ClCompile Include="src\f2c\r_sin.c" />
-    <ClCompile Include="src\f2c\r_sinh.c" />
-    <ClCompile Include="src\f2c\r_sqrt.c" />
-    <ClCompile Include="src\f2c\r_tan.c" />
-    <ClCompile Include="src\f2c\r_tanh.c" />
-    <ClCompile Include="src\f2c\sfe.c" />
-    <ClCompile Include="src\f2c\signal_.c" />
-    <ClCompile Include="src\f2c\signbit.c" />
-    <ClCompile Include="src\f2c\sig_die.c" />
-    <ClCompile Include="src\f2c\sue.c" />
-    <ClCompile Include="src\f2c\system_.c" />
-    <ClCompile Include="src\f2c\s_cat.c" />
-    <ClCompile Include="src\f2c\s_cmp.c" />
-    <ClCompile Include="src\f2c\s_copy.c" />
-    <ClCompile Include="src\f2c\s_paus.c" />
-    <ClCompile Include="src\f2c\s_rnge.c" />
-    <ClCompile Include="src\f2c\s_stop.c" />
-    <ClCompile Include="src\f2c\typesize.c" />
-    <ClCompile Include="src\f2c\uio.c" />
-    <ClCompile Include="src\f2c\uninit.c" />
-    <ClCompile Include="src\f2c\util.c" />
-    <ClCompile Include="src\f2c\wref.c" />
-    <ClCompile Include="src\f2c\wrtfmt.c" />
-    <ClCompile Include="src\f2c\wsfe.c" />
-    <ClCompile Include="src\f2c\wsle.c" />
-    <ClCompile Include="src\f2c\wsne.c" />
-    <ClCompile Include="src\f2c\xwsne.c" />
-    <ClCompile Include="src\f2c\z_abs.c" />
-    <ClCompile Include="src\f2c\z_cos.c" />
-    <ClCompile Include="src\f2c\z_div.c" />
-    <ClCompile Include="src\f2c\z_exp.c" />
-    <ClCompile Include="src\f2c\z_log.c" />
-    <ClCompile Include="src\f2c\z_sin.c" />
-    <ClCompile Include="src\f2c\z_sqrt.c" />
+    <ClCompile Include="src\blas\xerbla.c" />
+    <ClCompile Include="src\blas\xerbla_array.c" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="docs\cblas.txt" />
-    <Text Include="docs\cmakelists_cblas.txt" />
+    <Text Include="docs\cblas_cmakelists.txt" />
+    <Text Include="docs\cblas_f2c.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

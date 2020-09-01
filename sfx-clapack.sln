@@ -13,12 +13,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "uts_cblas", "uts\uts_cblas\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "include", "include", "{E37B2D2E-C426-4BF3-83D3-6D1C1DB63299}"
 	ProjectSection(SolutionItems) = preProject
-		include\_f2c.h = include\_f2c.h
-		include\blaswrap.h = include\blaswrap.h
-		include\cblas.h = include\cblas.h
-		include\clapack.h = include\clapack.h
-		include\extern_c.h = include\extern_c.h
-		include\old_clapack_bak.h = include\old_clapack_bak.h
+		common\include\_f2c.h = common\include\_f2c.h
+		common\include\blaswrap.h = common\include\blaswrap.h
+		common\include\cblas.h = common\include\cblas.h
+		common\include\clapack.h = common\include\clapack.h
+		common\include\extern_c.h = common\include\extern_c.h
+		common\include\old_clapack_bak.h = common\include\old_clapack_bak.h
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clapack", "clapack\clapack.vcxproj", "{E95CE621-AB06-461C-9C6C-30B5D4B793CF}"
