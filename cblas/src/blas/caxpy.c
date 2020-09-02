@@ -13,17 +13,7 @@
 #include "f2c.h"
 #include "blaswrap.h"
 
-/// <summary>
-/// Subroutine
-/// </summary>
-/// <param name="n"></param>
-/// <param name="ca"></param>
-/// <param name="cx"></param>
-/// <param name="incx"></param>
-/// <param name="cy"></param>
-/// <param name="incy"></param>
-/// <returns></returns>
-int caxpy_(integer *n, complex *ca, complex *cx, integer *
+/* Subroutine */int caxpy_(integer *n, complex *ca, complex *cx, integer *
 	incx, complex *cy, integer *incy)
 {
     /* System generated locals */
