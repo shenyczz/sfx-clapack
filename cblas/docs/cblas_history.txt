@@ -1,0 +1,6 @@
+[2020-09-01]
+CLAPACK是LAPACK的C语言线性库。
+从原有CLAPACK库分离出来CBLAS和CLAPACK两个项目，创建动态库
+以方便其他语言使用
+
+

@@ -28,6 +28,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clapack", "clapack\clapack.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "uts_clapack", "uts\uts_clapack\uts_clapack.vcxproj", "{E6B6362C-1814-408B-9F7A-5119CC59E66B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{C78E50E2-2C45-49DA-852E-F87F3C332F41}"
+	ProjectSection(SolutionItems) = preProject
+		docs\version.txt = docs\version.txt
+		docs\参考资料.txt = docs\参考资料.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -82,6 +88,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E37B2D2E-C426-4BF3-83D3-6D1C1DB63299} = {191AED8C-85EF-45A9-BEF6-D35E9E8E2EAE}
+		{C78E50E2-2C45-49DA-852E-F87F3C332F41} = {191AED8C-85EF-45A9-BEF6-D35E9E8E2EAE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D92DD977-04A0-4226-9519-B6FD1559D667}

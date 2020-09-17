@@ -1036,5 +1036,8 @@
     <Text Include="docs\cblas_f2c.txt">
       <Filter>docs</Filter>
     </Text>
+    <Text Include="docs\cblas_history.txt">
+      <Filter>docs</Filter>
+    </Text>
   </ItemGroup>
 </Project>
