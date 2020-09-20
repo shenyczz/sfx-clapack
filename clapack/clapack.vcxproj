@@ -337,7 +337,6 @@
     <ClCompile Include="..\common\f2clib\z_log.c" />
     <ClCompile Include="..\common\f2clib\z_sin.c" />
     <ClCompile Include="..\common\f2clib\z_sqrt.c" />
-    <ClCompile Include="..\common\INSTALL\slamch.c" />
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="src\aladz\dbdsdc.c" />
     <ClCompile Include="src\aladz\dbdsqr.c" />
@@ -437,6 +436,7 @@
     <ClCompile Include="src\alasc\slagtf.c" />
     <ClCompile Include="src\alasc\slagts.c" />
     <ClCompile Include="src\alasc\slaisnan.c" />
+    <ClCompile Include="src\alasc\slamch.c" />
     <ClCompile Include="src\alasc\slamrg.c" />
     <ClCompile Include="src\alasc\slaneg.c" />
     <ClCompile Include="src\alasc\slanst.c" />
@@ -496,6 +496,8 @@
     <ClCompile Include="src\ala\ilaver.c" />
     <ClCompile Include="src\ala\iparmq.c" />
     <ClCompile Include="src\ala\lsamen.c" />
+    <ClCompile Include="src\clax\clarscl2.c" />
+    <ClCompile Include="src\clax\clascl2.c" />
     <ClCompile Include="src\cla\cbdsqr.c" />
     <ClCompile Include="src\cla\cgbbrd.c" />
     <ClCompile Include="src\cla\cgbcon.c" />
@@ -630,6 +632,7 @@
     <ClCompile Include="src\cla\claein.c" />
     <ClCompile Include="src\cla\claesy.c" />
     <ClCompile Include="src\cla\claev2.c" />
+    <ClCompile Include="src\cla\clag2z.c" />
     <ClCompile Include="src\cla\clags2.c" />
     <ClCompile Include="src\cla\clagtm.c" />
     <ClCompile Include="src\cla\clahef.c" />
@@ -836,7 +839,6 @@
     <ClCompile Include="src\cla\icmax1.c" />
     <ClCompile Include="src\cla\ilaclc.c" />
     <ClCompile Include="src\cla\ilaclr.c" />
-    <ClCompile Include="src\cla\scsum1.c" />
     <ClCompile Include="src\dla\dgbbrd.c" />
     <ClCompile Include="src\dla\dgbcon.c" />
     <ClCompile Include="src\dla\dgbequ.c" />
@@ -1144,9 +1146,9 @@
     <ClCompile Include="src\dla\dtzrzf.c" />
     <ClCompile Include="src\dla\iladlc.c" />
     <ClCompile Include="src\dla\iladlr.c" />
-    <ClCompile Include="src\dla\slag2d.c" />
     <ClCompile Include="src\sla\ilaslc.c" />
     <ClCompile Include="src\sla\ilaslr.c" />
+    <ClCompile Include="src\sla\scsum1.c" />
     <ClCompile Include="src\sla\sgbbrd.c" />
     <ClCompile Include="src\sla\sgbcon.c" />
     <ClCompile Include="src\sla\sgbequ.c" />
@@ -1231,6 +1233,7 @@
     <ClCompile Include="src\sla\slaein.c" />
     <ClCompile Include="src\sla\slaexc.c" />
     <ClCompile Include="src\sla\slag2.c" />
+    <ClCompile Include="src\sla\slag2d.c" />
     <ClCompile Include="src\sla\slags2.c" />
     <ClCompile Include="src\sla\slagtm.c" />
     <ClCompile Include="src\sla\slagv2.c" />
@@ -1280,10 +1283,12 @@
     <ClCompile Include="src\sla\slarfx.c" />
     <ClCompile Include="src\sla\slargv.c" />
     <ClCompile Include="src\sla\slarrv.c" />
+    <ClCompile Include="src\sla\slarscl2.c" />
     <ClCompile Include="src\sla\slartv.c" />
     <ClCompile Include="src\sla\slarz.c" />
     <ClCompile Include="src\sla\slarzb.c" />
     <ClCompile Include="src\sla\slarzt.c" />
+    <ClCompile Include="src\sla\slascl2.c" />
     <ClCompile Include="src\sla\slaswp.c" />
     <ClCompile Include="src\sla\slasy2.c" />
     <ClCompile Include="src\sla\slasyf.c" />
@@ -1448,7 +1453,7 @@
     <ClCompile Include="src\sla\strttp.c" />
     <ClCompile Include="src\sla\stzrqf.c" />
     <ClCompile Include="src\sla\stzrzf.c" />
-    <ClCompile Include="src\zla\clag2z.c" />
+    <ClCompile Include="src\zlax\zlarscl2.c" />
     <ClCompile Include="src\zla\dzsum1.c" />
     <ClCompile Include="src\zla\ilazlc.c" />
     <ClCompile Include="src\zla\ilazlr.c" />
@@ -1651,6 +1656,7 @@
     <ClCompile Include="src\zla\zlarzb.c" />
     <ClCompile Include="src\zla\zlarzt.c" />
     <ClCompile Include="src\zla\zlascl.c" />
+    <ClCompile Include="src\zla\zlascl2.c" />
     <ClCompile Include="src\zla\zlaset.c" />
     <ClCompile Include="src\zla\zlasr.c" />
     <ClCompile Include="src\zla\zlassq.c" />

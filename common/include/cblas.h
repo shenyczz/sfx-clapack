@@ -2,10 +2,29 @@
 
 #include "_f2c.h"
 
-// C D S Z A
+
+// A
+#pragma region ALLBLAS -- Auxiliary routines for Level 2 and 3 BLAS
+//
+//set(ALLBLAS  lsame.c xerbla.c xerbla_array.c)
+
+CBLAS_API
+logical lsame_(char* ca, char* cb);
+
+/* Subroutine */
+CBLAS_API
+int xerbla_(char* srname, integer* info);
+
+/* Subroutine */
+CBLAS_API
+int xerbla_array__(char* srname_array__, integer* srname_len__,
+	integer* info, ftnlen srname_array_len);
+
+
+#pragma endregion
+
 
 // C
-//
 #pragma region CBLAS1 -- Single precision complex BLAS routines
 //
 //set(CBLAS1 icamax.c scabs1.c scasum.c scnrm2.c
@@ -233,9 +252,7 @@ int ctrsm_(char* side, char* uplo, char* transa, char* diag,
 #pragma endregion
 
 
-
 // D
-//
 #pragma region DBLAS1 -- Double precision real BLAS routines
 //
 //set(DBLAS1 idamax.c dasum.c daxpy.c dcopy.c ddot.c dnrm2.c
@@ -459,7 +476,6 @@ int dtrsm_(char* side, char* uplo, char* transa, char* diag,
 
 
 // S
-//
 #pragma region SBLAS1 -- Single precision real BLAS routines
 //
 //set(SBLAS1 isamax.c sasum.c saxpy.c scopy.c sdot.c snrm2.c
@@ -664,7 +680,6 @@ int strsm_(char* side, char* uplo, char* transa, char* diag,
 
 
 // Z
-//
 #pragma region ZBLAS1 -- Double precision complex BLAS routines
 //
 //set(ZBLAS1 izamax.c dcabs1.c dzasum.c dznrm2.c
@@ -904,25 +919,3 @@ int ztrsm_(char* side, char* uplo, char* transa, char* diag,
 
 
 #pragma endregion
-
-// Auxiliary
-//
-#pragma region ALLBLAS -- Auxiliary routines for Level 2 and 3 BLAS
-//
-//set(ALLBLAS  lsame.c xerbla.c xerbla_array.c)
-
-CBLAS_API
-logical lsame_(char* ca, char* cb);
-
-/* Subroutine */
-CBLAS_API
-int xerbla_(char* srname, integer* info);
-
-/* Subroutine */
-CBLAS_API
-int xerbla_array__(char* srname_array__, integer* srname_len__,
-	integer* info, ftnlen srname_array_len);
-
-
-#pragma endregion
-

@@ -56,7 +56,7 @@ void lapack_dgesvd()
 
 	char jobu = 'A', jobvt = 'A';
 	//int lda,
-	int ret = dgesvd_(&jobu, &jobvt, (integer*)&M, (integer*)&N, a, 0, s, u, 0, vt, 0, work, 0, 0);
+	//int ret = dgesvd_(&jobu, &jobvt, (integer*)&M, (integer*)&N, a, 0, s, u, 0, vt, 0, work, 0, 0);
 
 	//dgesvd_
 	//org.netlib.util.intW info = new org.netlib.util.intW(2);

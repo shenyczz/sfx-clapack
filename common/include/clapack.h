@@ -1,7 +1,7 @@
 ﻿#pragma once
 
 #include "_f2c.h"
-#include "cblas.h"
+#include "cblas.h"	// ??
 
 
 CLAPACK_API int fn_clapack(void);

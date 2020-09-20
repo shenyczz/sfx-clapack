@@ -7,7 +7,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cblas", "cblas\cblas.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "uts_Consol", "uts\uts_Consol\uts_Consol.vcxproj", "{B31D75CF-E78E-400A-9C03-8EF102F86AC7}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{191AED8C-85EF-45A9-BEF6-D35E9E8E2EAE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution items", "{191AED8C-85EF-45A9-BEF6-D35E9E8E2EAE}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "uts_cblas", "uts\uts_cblas\uts_cblas.vcxproj", "{A4FA7972-2F81-40C1-872B-CC236BFF1420}"
 EndProject
@@ -18,7 +18,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "include", "include", "{E37B
 		common\include\cblas.h = common\include\cblas.h
 		common\include\clapack.h = common\include\clapack.h
 		common\include\extern_c.h = common\include\extern_c.h
-		common\include\old_clapack_bak.h = common\include\old_clapack_bak.h
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clapack", "clapack\clapack.vcxproj", "{E95CE621-AB06-461C-9C6C-30B5D4B793CF}"
@@ -28,10 +27,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clapack", "clapack\clapack.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "uts_clapack", "uts\uts_clapack\uts_clapack.vcxproj", "{E6B6362C-1814-408B-9F7A-5119CC59E66B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{C78E50E2-2C45-49DA-852E-F87F3C332F41}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "document", "document", "{C78E50E2-2C45-49DA-852E-F87F3C332F41}"
 	ProjectSection(SolutionItems) = preProject
-		docs\version.txt = docs\version.txt
-		docs\参考资料.txt = docs\参考资料.txt
+		document\version.txt = document\version.txt
+		document\参考资料.txt = document\参考资料.txt
 	EndProjectSection
 EndProject
 Global
